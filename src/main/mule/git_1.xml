@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="git_1Flow" doc:id="5ac88dfc-e9db-41aa-abe9-967926efeb6b" >
 		<http:listener doc:name="Listener" doc:id="468a17c6-071e-4930-91af-902c96ba96a2" config-ref="HTTP_Listener_config" path="/hh"/>
 		<logger level="INFO" doc:name="Logger" doc:id="deef397d-9e6a-4337-90de-f1eadc8f09d8" message="#[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="79d13008-4eef-46f1-8ef2-d5c654107b23" message='#["jj"]'/>
 	</flow>
 </mule>
